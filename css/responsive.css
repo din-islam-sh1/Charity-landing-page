@@ -1,0 +1,29 @@
+@media only screen and (max-width: 576px){
+    #banner {
+        display: grid;
+        grid-template-columns: 30px auto 30px;
+        grid-template-rows: 28px 10px auto auto;
+    }
+
+    #banner .container .row .banner-main-items .banner-header {
+        display: none;
+        text-align: center;
+        grid-column: 2/span 1;
+        grid-row: 2/span 1;
+      }
+
+      #banner .container .row .banner-main-items {
+        grid-template-columns: 25px auto 25px;
+        grid-template-rows: 0px auto 285px auto;
+    }
+
+    #banner .container .row .banner-main-items .banner-hero {
+        grid-column: 1/-1;
+        grid-row: 3/4;
+    }
+
+    #banner .container .row .banner-main-items .banner-hero .banner-hero-title {
+        font-size: 30px;
+        padding: 100px 35px 20px 35px;
+    }
+}
